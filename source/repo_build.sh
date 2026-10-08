@@ -64,6 +64,10 @@ then
                 BUILD_BASE_PATH="d7vk"
                 REPO_URL="https://github.com/WinterSnowfall/d7vk"
                 ;;
+            "gxvk")
+                BUILD_BASE_PATH="gxvk"
+                REPO_URL="https://github.com/CkNoSFeRaTU/gxvk"
+                ;;
             "d7vk-tests")
                 BUILD_BASE_PATH="dxvk-tests"
                 REPO_URL="https://github.com/WinterSnowfall/d7vk-tests"
