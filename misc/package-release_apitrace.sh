@@ -7,7 +7,7 @@ cmake -DCMAKE_SYSTEM_NAME=Windows \
       -DCMAKE_INCLUDE_PATH=./dxsdk \
       -DCMAKE_C_COMPILER=/usr/bin/i686-w64-mingw32-gcc \
       -DCMAKE_CXX_COMPILER=/usr/bin/i686-w64-mingw32-g++ \
-      -DCMAKE_CXX_FLAGS="-s -static -static-libgcc -static-libstdc++ -msse -msse2 -mfpmath=sse -mpreferred-stack-boundary=2 -Wl,--file-alignment=4096 -Wl,--enable-stdcall-fixup -Wl,--kill-at" \
+      -DCMAKE_CXX_FLAGS="-s -static -fpermissive -static-libgcc -static-libstdc++ -msse -msse2 -mfpmath=sse -mpreferred-stack-boundary=2 -Wl,--file-alignment=4096 -Wl,--enable-stdcall-fixup -Wl,--kill-at" \
       -DENABLE_GUI=FALSE \
        CMakeLists.txt
 make clean
@@ -27,7 +27,7 @@ cmake -DCMAKE_SYSTEM_NAME=Windows \
       -DCMAKE_INCLUDE_PATH=./dxsdk \
       -DCMAKE_C_COMPILER=/usr/bin/x86_64-w64-mingw32-gcc \
       -DCMAKE_CXX_COMPILER=/usr/bin/x86_64-w64-mingw32-g++ \
-      -DCMAKE_CXX_FLAGS="-s -static -static-libgcc -static-libstdc++ -msse -msse2 -mfpmath=sse -Wl,--file-alignment=4096" \
+      -DCMAKE_CXX_FLAGS="-s -static -fpermissive -static-libgcc -static-libstdc++ -msse -msse2 -mfpmath=sse -Wl,--file-alignment=4096" \
       -DENABLE_GUI=FALSE \
        CMakeLists.txt
 make clean
